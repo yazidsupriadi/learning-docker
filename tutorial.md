@@ -14,15 +14,14 @@ The . at the end of the docker build command tells that Docker should look for t
 
 ## update source code
 after update the source code
-
-1. build container:
+build container
         docker build -t getting-started .
-2. try to run the container with command : 
+try to run the container with command : 
         docker run -dp 3000:3000 getting-started
  then replacing old container  with 
-3.command to get ID Container
+command to get ID Container
         docker ps
-4.Use the docker stop command to stop the container.
+Use the docker stop command to stop the container.
    Swap out <the-container-id> with the ID from docker ps
     docker stop <the-container-id>
   Once the container has stopped, you can remove it by using the docker rm command.
