@@ -1,6 +1,6 @@
-#Docker Tutorial
+# Docker Tutorial
 
-###docker build image
+### docker build image
 docker build -t getting-started .
 
 the -t flag tags our image. Think of this simply as a human-readable name for the final image. Since we named the image getting-started, we can refer to that image when we run a container.
@@ -12,7 +12,7 @@ docker run -dp 3000:3000 getting-started
 
 -dp : is detacched mode (in background) and p is port mapping
 
-##update source code
+## update source code
 after update the source code
 
 1. docker build -t getting-started .
@@ -20,7 +20,7 @@ after update the source code
  then replacing old container  with 
 3.docker ps(command to get ID Container)
 4.Use the docker stop command to stop the container.
-  # Swap out <the-container-id> with the ID from docker ps
+   Swap out <the-container-id> with the ID from docker ps
     docker stop <the-container-id>
   Once the container has stopped, you can remove it by using the docker rm command.
     docker rm <the-container-id>
